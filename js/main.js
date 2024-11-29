@@ -1,0 +1,24 @@
+let menuBars = document.getElementById("menu");
+let navLinks = document.getElementById("nav-links");
+let headCont = document.getElementById("headcont");
+let menuImg = document.getElementById("menu-img");
+menuBars.addEventListener("click", function () {
+  headCont.style.borderBottomLeftRadius = "0px";
+  headCont.style.borderBottomRightRadius = "0px";
+  headCont.style.boxShadow = "none";
+  navLinks.style.display = "flex";
+  navLinks.style.flexDirection = "column";
+  navLinks.style.backgroundColor = "#f7f7f7";
+  navLinks.style.width = "100%";
+  navLinks.style.boxShadow = "1px 10px 5px rgb(161, 161, 161)";
+  navLinks.style.borderBottomLeftRadius = "50px";
+  navLinks.style.borderBottomRightRadius = "50px";
+  navLinks.style.paddingBottom = "30px";
+  navLinks.style.position = "absolute";
+  navLinks.style.left = "50%";
+  navLinks.style.top = "100%";
+  navLinks.style.transform = "translate(-50%, 0%)";
+  navLinks.style.zIndex = "500000";
+  navLinks.style.textAlign = "center";
+  menuImg.src = "images/xmark-solid.svg";
+});
